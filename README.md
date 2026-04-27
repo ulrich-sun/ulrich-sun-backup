@@ -1,36 +1,60 @@
-![Ulrich NOUMSI's GitHub stats](https://github-readme-stats.vercel.app/api/?username=ulrich-sun&show_owner)
+<div align="center">
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ulrich-sun&langs_count=10&hide=javascript,html,php,python)
+# Ulrich NOUMSI
 
+**DevOps & Cloud Engineer**
 
+☁️ Linux · Kubernetes · Terraform · Terragrunt · Azure · AWS
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ulrich--steve--noumsi-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/ulrich-steve-noumsi/)
+[![GitHub](https://img.shields.io/badge/GitHub-ulrich--sun-181717?style=flat&logo=github)](https://github.com/ulrich-sun)
+[![Email](https://img.shields.io/badge/Email-ulrichnoumsi98@gmail.com-D14836?style=flat&logo=gmail)](mailto:ulrichnoumsi98@gmail.com)
 
+</div>
 
+---
 
-### Hi there, I'm < Ulrich SUN /> 👋
-💻 My name is Ulrich Steve NOUMSI, Engineer in computer systems and networks (Bac+3), graduate of the African Institute of Informatics (IAI) representation of Cameroon, Design Engineer in Administration and security of computer networks (Bac+5) ENSPD I live in Cameroon and I am currently training in Cloud engineering.
+## 📊 Stats & Activity
 
-I have 03 years of experience in DevOps and Cloud more precisely on Amazon Web Services (AWS) and Microsoft Azure.
+<div align="center">
 
-Having good technical knowledge and skills in development and operations, I learned the DevOps methodology in a self-taught way that I have practiced in several teams and companies in the process of application development and deployment in the cloud. I have a DevOps Engineer profile. 
+![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=ulrich-sun&show_owner&theme=default)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ulrich-sun&langs_count=10&hide=javascript,html,php,python&theme=default)
 
-I have also worked as an intern in System and Network Administration in several companies with the mission of designing and administering infrastructures on site and in the cloud in order to support companies in the migration or implementation of their infrastructure in the cloud. I also have a profile of Cloud engineer.
+![GitHub Streak](https://streak-stats.demolab.com/?user=ulrich-sun&theme=default)
 
-And I joined Connect Technology as a DevOps Engineer and Systems Administrator where I actively participated in the integration of the DevOps culture within the enterprise infrastructure management teams and also in the identification of risks, needs and security requirements up to the implementation of a global security policy on the development, testing and production process of client applications within our infrastructure. I also have a profile as an IT security specialist.
+</div>
 
-My future goal is to be able to put together my knowledge and technical skills in DevOps, Cloud and Cybersecurity in order to have as a result a profile of a DevSecOps and Cloud AWS / Azure Engineer.
+---
 
-- 🔭 I’m currently working on Kubernetes, Ansible, Terraform, Docker, Linux, Azure
-- 🌱 I’m currently learning Cloud Azure
-- 💬 I speak French(Native) & English (B2)
-- 📫 How to reach me: 
-  + ![mail](ulrichnoumsi98@gmail.com)
-  + ![Linkedin](https://www.linkedin.com/in/ulrich-steve-noumsi/)
-- ⚡ From Cameroun
+## 🚀 Client & Training Projects
 
-<!--
-**ulrich-sun/ulrich-sun** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> Contributions réalisées dans le cadre de collaborations avec [Eazytraining](https://eazytraining.fr).
 
-Here are some ideas to get you started:
--->
+| Projet | Stack | Description |
+|--------|-------|-------------|
+| [**Wellmum**](https://wellmum.app/) | Terraform · ECS Fargate · NestJS · FastAPI · Next.js | Infrastructure AWS haute disponibilité pour une plateforme FemTech/Digital Health |
+| [**EAZYSkills**](https://eazyskills.eazytraining.fr/) | AWS · ChatGPT · CI/CD | Application EdTech d'orientation par IA générative |
+| [**Ansible Semaphore**](https://ansible.eazytraining.fr/) | ECS Fargate · Terraform · GitHub Actions | Plateforme interne d'automatisation IT |
+| [**Docker Labs**](https://docker.labs.eazytraining.fr/) | Docker | Environnement de labs pour formations hands-on |
+| [**EAZYCard API**](https://github.com/AnselmeG300/notification-transactions-aws-sdk) | AWS Serverless · SDK | API de gestion de cartes virtuelles (FinTech) |
+| [**EAZYTraining Infra**](https://eazytraining.fr/) | IaC · FinOps | Refactoring IaC et optimisations orientées FinOps |
 
+---
+
+## 📚 Formations créées & publiées
+
+| Formation | Plateforme |
+|-----------|------------|
+| [**Terragrunt pour DevOps**](https://www.eazytraining.fr/cours/terragrunt-pour-devops/) — Structurer, factoriser et industrialiser des projets Terraform via un projet fil rouge | Eazytraining |
+| [**AWS Certified Associate — Architect & SysOps**](https://www.eazytraining.fr/cours/devenez-aws-certified-associate-architect-et-sysops/) — Préparation aux certifications AWS avec pratique intensive | Eazytraining |
+| [**Platform Engineer Kubernetes**](https://www.eazytraining.fr/cours/platform-engineer-kubernetes/) — Bootcamp Platform Engineering : clusters, Helm, CI/CD, automatisation | Eazytraining |
+| [**Terraform Cloud**](https://www.eazytraining.fr/cours/terraform-cloud/) — State management, workspaces, pipelines et gouvernance en équipe | Eazytraining |
+
+---
+
+## 🧪 Labs & Projets personnels
+
+- **mini-projet-gitlab** — Pipeline CI/CD GitLab sur AWS : provisioning d'infrastructure, runners et déploiement automatisé.
+- **Kubernetes labs** — Pratique personnelle de Kubernetes (deployments, services, configs) combinée à CI/CD et IaC.
+- **DevSecOps & Terragrunt repos** — Exercices pratiques autour du DevSecOps et de Terragrunt en contexte de formation.
