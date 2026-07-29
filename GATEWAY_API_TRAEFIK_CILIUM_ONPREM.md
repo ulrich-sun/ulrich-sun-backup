@@ -189,7 +189,64 @@ réseau, sinon un appareil peut se voir attribuer une IP déjà utilisée par un
 Certains switches d'entreprise bloquent le trafic ARP gratuit ("gratuitous
 ARP") par défaut (protection anti-spoofing). Si l'IP n'est jamais joignable
 malgré une policy `Accepted`, vérifier la configuration du switch avant de
+
 suspecter Cilium.
+
+
+
+
+
+
+providers:
+  kubernetesGateway:
+    enabled: true
+gatewayClass:
+  enabled: true
+gateway:
+  enabled: true
+Si l'une est absente ou à false, c'est la cause :
+
+
+helm upgrade traefik traefik/traefik -n traefik --reuse-values \
+  --set providers.kubernetesGateway.enabled=true \
+  --set gatewayClass.enabled=true \
+  --set gateway.enabled=true \
+  --set gateway.listeners.web.namespacePolicy.from=All
+2. Vérifier après coup
+
+
+kubectl get gatewayclass
+kubectl get gateway -A
+3. Si vous préférez la créer manuellement (sans dépendre du chart) :
+
+
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: traefik
+spec:
+  controllerName: traefik.io/gateway-controller
+
+kubectl apply -f gatewayclass.yaml
+4. Ensuite, il vous faudra aussi une Gateway (celle-ci n'est pas optionnelle, une HTTPRoute sans Gateway à référencer dans parentRefs ne sert à rien) :
+
+
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: traefik-gateway
+  namespace: traefik
+spec:
+  gatewayClassName: traefik
+  listeners:
+    - name: web
+      port: 80
+      protocol: HTTP
+      allowedRoutes:
+        namespaces:
+          from: All
+
+kubectl apply -f gateway.yaml
 
 ### Interface mal détectée
 Le champ `interfaces` de `CiliumL2AnnouncementPolicy` est une **regex** sur
